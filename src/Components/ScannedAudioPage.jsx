@@ -13,7 +13,16 @@ const audioFiles = {
   7: '/audios/AUD-20240923-WA0006.mp3',
   8: '/audios/AUD-20240923-WA0005.mp3',
   9: '/audios/AUD-20240923-WA0004.mp3',
-  10: '/audios/AUD-20240923-WA0003.mp3'
+  10: '/audios/AUD-20240923-WA0003.mp3',
+  11: '/audios/AUD-20240923-WA0008.mp3.mp3',
+  12: '/audios/AUD-20240923WA.mp3.mp3', 
+  13: '/audios/AUD-20240924-WA0038.mp3',
+  14: '/audios/AUD-20240924-WA0037.mp3',
+  15: '/audios/AUD-20240922-WA0094.mp3',
+  16: '/audios/AUD-20240923-WA0001.mp3',
+  17: '/audios/AUD-20240923-WA0002.mp3',
+  18: '/audios/AUD-20240923-WA0011.mp3',
+  19: '/audios/AUD-20240923-WA0012.mp3'
   
  
 };
