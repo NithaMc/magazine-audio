@@ -4,7 +4,10 @@ import AudioPlayer from './AudioPlayer.jsx';
 
 
 const audioFiles = {
-  1: '/audios/1_lv_0_20240904060756_320kbps (1).mp3',
+  1: '/audios/1_lv_0_20240904060756_320kbps (1).mp3',git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/NithaMc/magazine-audio.git
+  git push -u origin main
   2: '/audios/STREEKAL.mp3',
   3: '/audios/AUD-20240923-WA0014.mp3',
   4: '/audios/AUD-20240923-WA0013.mp3',
