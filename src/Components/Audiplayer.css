@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box; 
+}
+
+
+
+.App {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom,  #483030,#e7e4e4); 
+    color: white;
+    text-align: center;
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-player {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s; 
+    
+}
+
+.audio-image {
+  
+    height: 300px; 
+    width: 340px;
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+
+}
+
+@media (max-width: 768px) {
+    .audio-image {
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .audio-image {
+        max-width: 85% ; 
+    }
+}
+
+.audio-player:hover {
+    transform: scale(1.02); 
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd; 
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+input[type="range"]:hover {
+    opacity: 1; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #483030; 
+    cursor: pointer;
+}
+
+.track-duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px; 
+}
+
+.track-duration > p {
+  font-size: 10px;
+  font-weight: 500;
+  color: #c4c4c6;
+  margin: 0;
+  
+}
+button {
+    width: 50px;
+    height: 50px; 
+    font-size: 24px; 
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 16, 16);
+    background-color: #faf0f0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px auto 0; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #eff1f2; 
+}
+
+
+
+@media (max-width: 768px) {
+    .App-header {
+        font-size: calc(8px + 2vmin);
+    }
+
+    .audio-player {
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .App-header {
+        font-size: calc(6px + 2vmin);
+    }
+
+    .audio-player {
+        padding: 15px; 
+    }
+
+    button {
+        width: 45px;
+        height: 45px; 
+        font-size: 20px; 
+    }
+}
+.text{
+    font-size: medium;
+    padding:25%;
+    background-color: rgb(45, 44, 44);
+    height: 100%;
+}
