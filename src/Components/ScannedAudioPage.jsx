@@ -64,9 +64,7 @@ const ScannedAudioPage = () => {
   }
 
   return (
-    <div>
-      {/* <h1>Playing Audio {id}</h1> */}
-    
+    <div>    
       <AudioPlayer audioSrc={audioSrc} imageSrc={imageSrc}/>
     </div>
   );
