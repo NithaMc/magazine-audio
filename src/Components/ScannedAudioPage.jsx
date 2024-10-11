@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import AudioPlayer from './AudioPlayer.jsx';
 
 
-const audioFiles = {
+export const audioFiles = {
   1: '/audios/1_lv_0_20240904060756_320kbps (1).mp3',
   2: '/audios/STREEKAL.mp3',
   3: '/audios/AUD-20240923-WA0014.mp3',
@@ -53,21 +53,56 @@ const imageFiles = {
 
 
 }
+  const ScannedAudioPage = () => {
+    const { id } = useParams();
+    const audioSrc = audioFiles[id]; 
+    const imageSrc = imageFiles[id];
 
-const ScannedAudioPage = () => {
-  const { id } = useParams();
-  const audioSrc = audioFiles[id]; 
-  const imageSrc = imageFiles[id];
+    if (!audioSrc) {
+      return (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100vh',
+        }}>
+          <div style={{
+            textAlign: 'center',
+            padding: '2rem',
+            backgroundColor: 'white',
+            borderRadius: '0.5rem',
+          }}>
+            <h2 style={{
+              fontSize: '1.875rem',
+              fontWeight: 'bold',
+              color: '#1f2937',
+              marginBottom: '1rem'
+            }}>Oops! Invalid Link</h2>
+            <p style={{
+              fontSize: '1.125rem',
+              color: '#4b5563',
+              marginBottom: '1.5rem'
+            }}>The audio you're looking for doesn't seem to exist.</p>
+            <a href="/" style={{
+              padding: '0.75rem 1.5rem',
+              backgroundColor: '#3b82f6',
+              color: 'white',
+              borderRadius: '9999px',
+              textDecoration: 'none',
+              transition: 'background-color 0.3s'
+            }} onMouseOver={(e) => e.target.style.backgroundColor = '#2563eb'} onMouseOut={(e) => e.target.style.backgroundColor = '#3b82f6'}>
+              Go Back Home
+            </a>
+          </div>
+        </div>
+      );
+    }
 
-  if (!audioSrc) {
-    return <div className='bg-black'>Open the link again</div>; 
-  }
+    return (
+      <div>    
+        <AudioPlayer initialAudioId={parseInt(id)} imageSrc={imageSrc}/>
+      </div>
+    );
+  };
 
-  return (
-    <div>    
-      <AudioPlayer audioSrc={audioSrc} imageSrc={imageSrc}/>
-    </div>
-  );
-};
-
-export default ScannedAudioPage;
+  export default ScannedAudioPage;
