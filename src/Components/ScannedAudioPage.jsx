@@ -4,55 +4,52 @@ import AudioPlayer from './AudioPlayer.jsx';
 
 
 export const audioFiles = {
-  1: '/audios/1_lv_0_20240904060756_320kbps (1).mp3',
-  2: '/audios/STREEKAL.mp3',
-  3: '/audios/AUD-20240923-WA0014.mp3',
-  4: '/audios/AUD-20240923-WA0013.mp3',
-  5: '/audios/AUD-20240923-WA0010.mp3',
-  6: '/audios/AUD-20240923-WA0007.mp3',
-  7: '/audios/AUD-20240923-WA0006.mp3',
-  8: '/audios/AUD-20240923-WA0005.mp3',
-  9: '/audios/AUD-20240923-WA0004.mp3',
-  10: '/audios/AUD-20240923-WA0003.mp3',
-  11: '/audios/AUD-20240923-WA0008.mp3.mp3',
-  12: '/audios/AUD-20240923WA.mp3.mp3', 
-  13: '/audios/AUD-20240924-WA0038.mp3',
-  14: '/audios/AUD-20240924-WA0037.mp3',
-  15: '/audios/AUD-20240922-WA0094.mp3',
-  16: '/audios/AUD-20240923-WA0001.mp3',
-  17: '/audios/AUD-20240923-WA0002.mp3',
-  18: '/audios/AUD-20240923-WA0011.mp3',
-  19: '/audios/AUD-20240923-WA0012.mp3',
-  20:'/audios/AUD-20241006-WA0012.mp3',
-  21:'/audios/WhatsApp Audio 2024-10-05 at 7.29.29 PM - Copy.mp3'
-  
- 
+  1: "/audios/1_lv_0_20240904060756_320kbps (1).mp3", // Previously 1
+  2: "/audios/AUD-20240923-WA0005.mp3", // Previously 8
+  3: "/audios/AUD-20240923-WA0014.mp3", // Previously 3
+  4: "/audios/AUD-20240923-WA0004.mp3", // Previously 9
+  5: "/audios/AUD-20240923-WA0007.mp3", // Previously 6
+  6: "/audios/AUD-20240924-WA0037.mp3", // Previously 14
+  7: "/audios/AUD-20240922-WA0094.mp3", // Previously 15
+  8: "/audios/AUD-20240923-WA0010.mp3", // Previously 5
+  9: "/audios/AUD-20240923-WA0012.mp3", // Previously 19
+  10: "/audios/AUD-20240923-WA0006.mp3", // Previously 7
+  11: "/audios/AUD-20240923-WA0003.mp3", // Previously 10
+  12: "/audios/AUD-20240923-WA0011.mp3", // Previously 18
+  13: "/audios/AUD-20240923-WA0008.mp3.mp3", // Previously 11
+  14: "/audios/AUD-20240924-WA0038.mp3", // Previously 13
+  15: "/audios/STREEKAL.mp3", // Previously 2
+  16: "/audios/AUD-20240923WA.mp3.mp3", // Previously 12
+  17: "/audios/WhatsApp Audio 2024-10-05 at 7.29.29 PM - Copy.mp3", // Previously 21
+  18: "/audios/AUD-20240923-WA0013.mp3", // Previously 4
+  19: "/audios/AUD-20240923-WA0001.mp3", // Previously 16
+  20: "/audios/AUD-20240923-WA0002.mp3", // Previously 17
+  21: "/audios/AUD-20241006-WA0012.mp3", // Previously 20
 };
+
 const imageFiles = {
-  1:'/images/mgzn indira 1.jpg',
-  2:'/images/dalith 2.jpg',
-  3:'/images/Unaggatha niyal 1.jpg',
-  4:'/images/kathapathra nirupanam4.jpg',
-  5:'/images/warden.jpg',
-  6:'/images/adhyapakanano1.jpg',
-  7:'/images/അംഗന യാനം.jpg',
-  8:'/images/സ്തുതി പാടകർ.jpg',
-  9:'/images/mgzn 5.jpg',
-  10:'/images/ഉടൽ2.jpg',
-  11:'/images/Gender roles.jpg',
-  12:'/images/Eka 3.jpg',
-  13:'/images/ഒരു സ്ത്രീ.jpg',
-  14:'/images/WOMEN ARE FLOWERS_-1.jpg',
-  15:'/images/വിരലടയാളത്തിന്റെ നാലു നിലവിളികൾ.jpg',
-  16:'/images/mayalokam 2.jpg',
-  17:'/images/HOME SWEET HOME.jpg',
-  18:'/images/white feminism 4.jpg',
-  19:'/images/women in conflict 1.jpg',
-  20:'/images/hadiya interview.jpg',
-  21:'/images/പെണ്ണ്.jpg'
-
-
-}
+  1: "/images/mgzn indira 1.jpg", // Corresponds to audio 1
+  2: "/images/സ്തുതി പാടകർ.jpg", // Corresponds to audio 8
+  3: "/images/Unaggatha niyal 1.jpg", // Corresponds to audio 3
+  4: "/images/ഉടൽ2.jpg", // Corresponds to audio 9
+  5: "/images/adhyapakanano1.jpg", // Corresponds to audio 6
+  6: "/images/WOMEN ARE FLOWERS_-1.jpg", // Corresponds to audio 14
+  7: "/images/വിരലടയാളത്തിന്റെ നാലു നിലവിളികൾ.jpg", // Corresponds to audio 15
+  8: "/images/kathapathra nirupanam4.jpg", // Corresponds to audio 5
+  9: "/images/women in conflict 1.jpg", // Corresponds to audio 19
+  10: "/images/അംഗന യാനം.jpg", // Corresponds to audio 7
+  11: "/images/ഉടൽ2.jpg", // Corresponds to audio 10
+  12: "/images/Eka 3.jpg", // Corresponds to audio 18
+  13: "/images/Gender roles.jpg", // Corresponds to audio 11
+  14: "/images/ഒരു സ്ത്രീ.jpg", // Corresponds to audio 13
+  15: "/images/dalith 2.jpg", // Corresponds to audio 2
+  16: "/images/HOME SWEET HOME.jpg", // Corresponds to audio 12
+  17: "/images/പെണ്ണ്.jpg", // Corresponds to audio 21
+  18: "/images/mgzn 5.jpg", // Corresponds to audio 4
+  19: "/images/hadiya interview.jpg", // Corresponds to audio 16
+  20: "/images/white feminism 4.jpg", // Corresponds to audio 17
+  21: "/images/mayalokam 2.jpg", // Corresponds to audio 20
+};
   const ScannedAudioPage = () => {
     const { id } = useParams();
     const audioSrc = audioFiles[id]; 
