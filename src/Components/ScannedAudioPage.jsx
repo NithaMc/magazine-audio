@@ -31,24 +31,24 @@ const imageFiles = {
   1: "/images/mgzn indira 1.jpg", // Corresponds to audio 1
   2: "/images/സ്തുതി പാടകർ.jpg", // Corresponds to audio 8
   3: "/images/Unaggatha niyal 1.jpg", // Corresponds to audio 3
-  4: "/images/ഉടൽ2.jpg", // Corresponds to audio 9
+  4:  "/images/mgzn 5.jpg", // Corresponds to audio 4
   5: "/images/adhyapakanano1.jpg", // Corresponds to audio 6
   6: "/images/WOMEN ARE FLOWERS_-1.jpg", // Corresponds to audio 14
   7: "/images/വിരലടയാളത്തിന്റെ നാലു നിലവിളികൾ.jpg", // Corresponds to audio 15
-  8: "/images/kathapathra nirupanam4.jpg", // Corresponds to audio 5
+  8: "/images/warden.jpg",
   9: "/images/women in conflict 1.jpg", // Corresponds to audio 19
   10: "/images/അംഗന യാനം.jpg", // Corresponds to audio 7
   11: "/images/ഉടൽ2.jpg", // Corresponds to audio 10
-  12: "/images/Eka 3.jpg", // Corresponds to audio 18
+  12: "/images/white feminism 4.jpg", // Corresponds to audio 17
   13: "/images/Gender roles.jpg", // Corresponds to audio 11
   14: "/images/ഒരു സ്ത്രീ.jpg", // Corresponds to audio 13
   15: "/images/dalith 2.jpg", // Corresponds to audio 2
-  16: "/images/HOME SWEET HOME.jpg", // Corresponds to audio 12
+  16: "/images/Eka 3.jpg", // Corresponds to audio 18
   17: "/images/പെണ്ണ്.jpg", // Corresponds to audio 21
-  18: "/images/mgzn 5.jpg", // Corresponds to audio 4
-  19: "/images/hadiya interview.jpg", // Corresponds to audio 16
-  20: "/images/white feminism 4.jpg", // Corresponds to audio 17
-  21: "/images/mayalokam 2.jpg", // Corresponds to audio 20
+  18:  "/images/kathapathra nirupanam4.jpg", // Corresponds to audio 5
+  19: "/images/mayalokam 2.jpg", // Corresponds to audio 20"
+  20:  "/images/HOME SWEET HOME.jpg", // Corresponds to audio 12
+  21: "/images/hadiya interview.jpg", // Corresponds to audio 16
 };
   const ScannedAudioPage = () => {
     const { id } = useParams();
