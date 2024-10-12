@@ -12,7 +12,7 @@ const AudioPlayer = ({ initialAudioId, imageSrc }) => {
     const [duration, setDuration] = useState(0);
 
     const audioRef = useRef(null);
-
+  
     const handleSeek = (e) => {
       audioRef.current.currentTime = e.target.value;
       setCurrentTime(e.target.value);
@@ -40,21 +40,6 @@ const AudioPlayer = ({ initialAudioId, imageSrc }) => {
       }
     };
 
-    const handlePrev = () => {
-      const newAudioId = initialAudioId - 1;
-      if (newAudioId <= 0) {
-        return;
-      }
-      window.location.href = `/audio/${newAudioId}`
-    };
-
-    const handleNext = () => {
-      const newAudioId = initialAudioId + 1;
-      if (newAudioId >= audioFiles.length) {
-        return;
-      }
-      window.location.href = `/audio/${newAudioId}`
-    };
 
     function formatDuration(durationSeconds) {
       const minutes = Math.floor(durationSeconds / 60);
@@ -89,16 +74,16 @@ const AudioPlayer = ({ initialAudioId, imageSrc }) => {
             <p>{formatDuration(duration)}</p>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <button className="nav-button prev-button" onClick={handlePrev} disabled={initialAudioId <= 1}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            {/* <button className="nav-button prev-button" onClick={handlePrev} disabled={initialAudioId <= 1}>
               <i className="bi bi-skip-backward-fill"></i>
-            </button>
+            </button> */}
             <button className="nav-button play-pause-button" onClick={handlePlayPause}>
               <i className={`bi ${isPlaying ? "bi-pause-fill" : "bi-play-fill"}`}></i>
             </button>
-            <button className="nav-button next-button" onClick={handleNext} disabled={initialAudioId >= 21}>
+            {/* <button className="nav-button next-button" onClick={handleNext} disabled={initialAudioId >= 21}>
               <i className="bi bi-skip-forward-fill"></i>
-            </button>
+            </button> */}
           </div>
         </div>
       </header>
